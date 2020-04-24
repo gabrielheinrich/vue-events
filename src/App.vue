@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'events-list' }">List</router-link>
-      <router-link :to="{ name: 'events-create' }">Create</router-link>
-    </div>
+    <NavBar></NavBar>
     <router-view />
   </div>
 </template>
 
 <script>
-export default {};
+import NavBar from "./components/NavBar.vue";
+
+export default {
+  components: {
+    NavBar
+  }
+};
 </script>
 
 <style>
@@ -40,7 +43,7 @@ export default {};
 
 #nav a + a:before {
   content: "|";
-  margin: 0 0.2em;
+  margin: 0 0.5rem;
   color: #2c3e50;
 }
 
