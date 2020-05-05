@@ -1,14 +1,29 @@
 <template>
   <div>
     <h1>Events Listing</h1>
-    <router-link :to="{ name: 'events-show', params: { id: 42 } }"
-      >Event 42</router-link
-    >
+    <EventCard v-for="event in events" :title="event.title" :id="event.id" :key="event.id"></EventCard>
   </div>
 </template>
 
 <script>
-export default {};
+import EventCard from "@/components/EventCard.vue";
+import { getEvents } from "@/services/EventService.js";
+
+export default {
+  data() {
+    return {
+      events: []
+    };
+  },
+  components: {
+    EventCard: EventCard
+  },
+  created() {
+    getEvents().then(response => {
+      this.events = response.data;
+    });
+  }
+};
 </script>
 
 <style scoped></style>

@@ -22,15 +22,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* max-width: 500px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 0 20px 20px;
-  box-sizing: border-box; */
+  padding: 2em 0 4em 0;
 }
 
-/* a {
+/* Reset Links */
+a {
   text-decoration: none;
-} */
+  color: #2c3e50;
+}
 
 #nav {
   padding: 30px;

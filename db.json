@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "JS Code Wars",
+      "description": "A short description of the event",
+      "date": "04/24/2020 15:00",
+      "location": "Dresden"
+    },
+    {
+      "id": 2,
+      "title": "Park Run",
+      "description": "A short description of the event",
+      "date": "03/24/2020 15:00",
+      "location": "Halle"
+    },
+    {
+      "id": 3,
+      "title": "BBQ",
+      "description": "Hallo",
+      "date": "04/24/2020 15:00",
+      "location": "Grimma"
+    },
+    {
+      "id": 4,
+      "title": "Go to the Zoo",
+      "description": "Zoo",
+      "date": "05/24/2020 15:00",
+      "location": "Bautzen"
+    }
+  ]
+}
